@@ -1,0 +1,42 @@
+<!-- loginForm.html -->
+<template>
+    <div class="container">
+        <!-- Left section for logo -->
+        <div class="left-section">
+            <img src={logoUrl} alt="Company Logo" />
+        </div>
+        <!-- Right section for Login Form -->
+        <div class="right-section">
+            <div class="first">
+                <!-- background image applied through css -->
+            </div>
+            <form action="#" method="post">
+                <h1>USER LOGIN
+                    <span>
+                    <h3>Welcome  Back</h3>
+                    </span>
+                </h1>
+                <div class="login-form">
+                    <!-- Input tags for username and password -->
+                    <input type="text" placeholder="USERNAME" value={username} oninput={handleUsernameChange} />
+                    <input type="password" placeholder="PASSWORD" value={password} oninput={handlePasswordChange} />
+                    <div class="log1">
+                        <div>
+                           <input type="radio" name="a1" value="Remember me"/><label >Remember me</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="a1" value="Forgot Password"/><label>Forgot Password</label>
+                        </div>
+                    </div>
+                    <!-- Button with seperate div -->
+                    <div>
+                        <button class="login-button" onclick={handleLogin}>LOGIN</button>
+                        <div class="label">
+                            <label>Are you an Employee? Login here</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</template>

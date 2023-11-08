@@ -1,0 +1,23 @@
+<template>
+    <div class="slds-var-m-bottom_medium">
+    </div>
+    <lightning-card title="parent to child communication an action">
+        <div class="slds-var-m-around_medium">
+            <lightning-input type="number" 
+            label="enter percentage"
+            onkeyup={changeHandler}
+            value={percentage}>
+            </lightning-input>
+            <c-p2c-progress-component 
+             progress-value={percentage}>
+            </c-p2c-progress-component>
+        </div>
+    </lightning-card>
+    <c-p2c-alert-component
+    message="hurray i got the message!!"
+    card-heading="Parent To Child primitive data communication">
+    </c-p2c-alert-component>
+    <lightning-button varient="brand" label="Reset Slider"
+    onclick={handleClick}></lightning-button>
+    <c-p2c-slider></c-p2c-slider> 
+   </template>

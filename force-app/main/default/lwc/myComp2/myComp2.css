@@ -1,0 +1,8 @@
+@import 'c/cssLibrary';
+:host{
+    background:blue;
+    color: white;
+}
+
+
+

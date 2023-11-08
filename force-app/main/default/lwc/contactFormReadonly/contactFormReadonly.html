@@ -1,0 +1,29 @@
+<template>
+   <lightning-card title="Contact form read omly">
+    <div class="slds-p-horizontal_medium">
+        <lightning-record-view-form
+            record-id={recordId}
+            density="auto"
+            object-api-name={objectName}
+            onload={handLoad}
+            >
+            <lightning-output-field
+            field-name="FirstName"
+            ></lightning-output-field>
+            <lightning-output-field
+            field-name="Phone">
+        </lightning-output-field>
+        <lightning-output-field
+            field-name="Title">
+        </lightning-output-field>
+        <lightning-output-field
+            field-name="LastName">
+        </lightning-output-field>
+        <lightning-output-field field-name="Name"></lightning-output-field>
+        <lightning-output-field field-name="Email"></lightning-output-field>
+        </lightning-record-view-form>
+    </div>
+    <lightning-button onclick={updateRecordId} label="update" class="slds-m-around_medium">   
+    </lightning-button>
+   </lightning-card> 
+</template>

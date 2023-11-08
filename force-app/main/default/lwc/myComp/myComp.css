@@ -1,0 +1,10 @@
+@import 'c/cssLibrary';
+/*.active{
+    background: greenyellow;
+    color: purple;
+
+}*/
+:host{
+    background:red;
+    color:white
+}

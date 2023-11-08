@@ -1,0 +1,70 @@
+<template>
+    <div class="container">
+        <h1>Feedback Form</h1>
+
+        <div class="question">
+            <p>1. What type of service did you receive for your electric two-wheeler?</p>
+            <div class="options">
+                <label><input type="radio" name="serviceType" value="Regular Maintenance"> Regular Maintenance</label><br>
+                <label><input type="radio" name="serviceType" value="Repair"> Repair</label><br>
+                <label><input type="radio" name="serviceType" value="Other"> Other</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>2. Was the service completed to your satisfaction?</p>
+            <div class="options">
+                <label><input type="radio" name="satisfaction" value="Very Satisfied"> Very Satisfied</label><br>
+                <label><input type="radio" name="satisfaction" value="Satisfied"> Satisfied</label><br>
+                <label><input type="radio" name="satisfaction" value="Neutral"> Neutral</label><br>
+                <label><input type="radio" name="satisfaction" value="Dissatisfied"> Dissatisfied</label><br>
+                <label><input type="radio" name="satisfaction" value="Very Dissatisfied"> Very Dissatisfied</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>3. Please rate the following aspects of our service on a scale of 1 to 5, with 5 being the highest:</p>
+            <div class="rating">
+                <label>a. Quality of Work: <input type="number" name="qualityOfWork" min="1" max="5"></label><br>
+                <label>b. Timeliness: <input type="number" name="timeliness" min="1" max="5"></label><br>
+                <label>c. Communication: <input type="number" name="communication" min="1" max="5"></label><br>
+                <label>d. Professionalism: <input type="number" name="professionalism" min="1" max="5"></label><br>
+                <label>e. Price/Value: <input type="number" name="priceValue" min="1" max="5"></label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>4. Did our team explain the service performed and answer your questions adequately?</p>
+            <div class="options">
+                <label><input type="radio" name="explanation" value="Yes"> Yes</label><br>
+                <label><input type="radio" name="explanation" value="No"> No</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>5. Were there any additional services or repairs recommended by our technicians?</p>
+            <div class="options">
+                <label><input type="radio" name="additionalServices" value="Yes"> Yes</label><br>
+                <label><input type="radio" name="additionalServices" value="No"> No</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>6. How likely are you to recommend our service to others?</p>
+            <div class="options">
+                <label><input type="radio" name="recommendation" value="Very Likely"> Very Likely</label><br>
+                <label><input type="radio" name="recommendation" value="Likely"> Likely</label><br>
+                <label><input type="radio" name="recommendation" value="Neutral"> Neutral</label><br>
+                <label><input type="radio" name="recommendation" value="Unlikely"> Unlikely</label><br>
+                <label><input type="radio" name="recommendation" value="Very Unlikely"> Very Unlikely</label><br>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>7. Please share any additional comments, suggestions, or concerns about your experience with our service:</p>
+            <lightning-textarea label="Your Comments" value={additionalComments}></lightning-textarea>
+        </div>
+
+        <lightning-button label="Submit" onclick={handleSubmit}></lightning-button>
+    </div>
+</template>

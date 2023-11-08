@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="To-Do List">
+        <div class="slds-m-around_medium">
+            <lightning-input label="New To-Do" value={todoText} onchange={handleTodoTextChange}></lightning-input>
+            <lightning-button variant="brand" label="Add" onclick={addTodo}></lightning-button>
+            <ul class="slds-m-top_medium">
+                <template for:each={todos} for:item="todo" for:index="index">
+                    <li key={todo.id}>
+                        <div class="slds-flex slds-align_absolute-center">
+                            <lightning-input type="checkbox" checked={todo.completed} onchange={handleTodoStatusChange}></lightning-input>
+                            <span class={todo.completed ? 'completed' : ''}>{todo.text}</span>
+                            <lightning-button variant="destructive" label="Delete" onclick={handleDeleteTodo} data-index={index}></lightning-button>
+                        </div>
+                    </li>
+                </template>
+            </ul>
+        </div>
+    </lightning-card>
+</template>

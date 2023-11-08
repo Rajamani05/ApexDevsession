@@ -1,0 +1,109 @@
+/* loginForm.css */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://collegeprep.uworld.com/wp-content/uploads/2023/08/CP-Blog-The-Role-of-SAT-Score-in-College-Admissions_BLOG.webp');
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.left-section {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+.left-section img {
+    width: 250px;
+    position: absolute;
+    top: 60px;
+    left: 40px;
+}
+
+.right-section {
+    flex: none;
+    margin: 100px;
+    width: 300px;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow here */
+    border-radius: 10px;
+    background-color: #fff;
+    height: 550PX;
+}
+
+.right-section h1{
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+    color: #233864;
+    font-size: x-large;
+}
+.right-section h3{
+    color: #3871c2;
+    font-size:small;
+    font-weight:bold;
+    
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    margin: 10px;
+    padding: 10px;
+    background-color: #a0bcdc; 
+}
+.login-form input {
+    padding: 10px 35px 10px 10px; 
+    background-image: url('https://static-00.iconduck.com/assets.00/security-password-icon-1959x2048-sq0rdvok.png');
+    background-repeat: no-repeat;
+    background-position: right center; 
+    background-size: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+}
+
+ .login-button {
+    margin: 10px;
+    width:150px; 
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+/* .reset-button {
+    background-color: #ccc;
+}*/
+
+.login-button {
+    background-color:#0a28a6;
+    color: #fff;
+    border-radius: 50px;
+    align-items: center;
+} 
+
+.first{
+    height: 200px;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('https://img.freepik.com/free-photo/kids-getting-back-school-together_23-2149507650.jpg?w=1480&t=st=1698500374~exp=1698500974~hmac=ba8f0f8545092aa222a680ce32b83638675ee994c43c5d29f578fa11ec6b9702');
+}
+
+.login-form input{
+        border-radius: 50px;
+}
+
+.log1{
+    display: inline-flex;
+    color: #2d439f;
+}
+.label{
+    color: #2d439f;
+}
